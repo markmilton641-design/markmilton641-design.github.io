@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ochaga Mark Best – Computer Science Student</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Instrument+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#ECEEE9; --ink:#17202B; --mute:#5A6570; --line:#C9CEC8; --accent:#2D45F0;
+  --display:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;
+  --body:"Instrument Sans","Helvetica Neue",Arial,sans-serif;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#12171E;--ink:#E8EBE6;--mute:#98A2AC;--line:#2E3742;--accent:#7C8DFF;color-scheme:dark}
+}
+:root[data-theme="dark"]{--bg:#12171E;--ink:#E8EBE6;--mute:#98A2AC;--line:#2E3742;--accent:#7C8DFF;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.6 var(--body);-webkit-font-smoothing:antialiased}
+.wrap{max-width:68rem;margin:0 auto;padding:0 clamp(1.25rem,5vw,3rem)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:2px}
+
+header.top{display:flex;justify-content:space-between;align-items:center;padding:1.5rem 0}
+header.top nav{display:flex;gap:1.5rem}
+header.top a{text-decoration:none;font-weight:500}
+header.top a:hover{text-decoration:underline;text-underline-offset:5px}
+
+.hero{padding:clamp(3rem,9vw,7rem) 0 clamp(3rem,8vw,6rem)}
+.hero h1{font:800 clamp(3rem,13vw,10.5rem)/.88 var(--display);letter-spacing:-.04em;margin:0 0 2rem}
+.hero p{max-width:36rem;font-size:1.25rem;color:var(--mute);margin:0}
+.hero p b{color:var(--ink);font-weight:500}
+
+section{padding:clamp(2.5rem,6vw,4.5rem) 0;border-top:1px solid var(--line)}
+h2{font:800 1.75rem/1.1 var(--display);letter-spacing:-.02em;margin:0 0 2rem}
+
+details{border-bottom:1px solid var(--line)}
+details:first-of-type{border-top:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:1fr 2rem;gap:1rem;align-items:center;padding:1.25rem 0}
+summary::-webkit-details-marker{display:none}
+summary .t{font:500 clamp(1.4rem,3.5vw,2.1rem)/1.15 var(--display);letter-spacing:-.02em}
+summary .p{width:1.1rem;height:1.1rem;position:relative;justify-self:end}
+summary .p::before,summary .p::after{content:"";position:absolute;background:var(--ink);inset:50% 0 auto;height:2px;margin-top:-1px;transition:transform .25s ease}
+summary .p::after{transform:rotate(90deg)}
+details[open] summary .p::after{transform:rotate(0)}
+details[open] summary .t,summary:hover .t{color:var(--accent)}
+.body{padding:0 0 2rem;max-width:40rem}
+.body p{margin:0 0 .75rem}
+.body ul{margin:0;padding-left:1.25rem;color:var(--mute)}
+
+.about{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,6vw,5rem)}
+.about p{margin:0 0 1rem;max-width:34rem}
+.about dl{margin:0}
+.about dt{font-weight:500;margin-top:1.25rem}
+.about dt:first-child{margin-top:0}
+.about dd{margin:0;color:var(--mute)}
+
+.contact a.mail{display:inline-block;font:800 clamp(1.4rem,5.5vw,3.5rem)/1.1 var(--display);letter-spacing:-.03em;text-decoration:none;border-bottom:4px solid var(--accent);padding-bottom:.25rem;word-break:break-word}
+.contact a.mail:hover{color:var(--accent)}
+.contact p{margin:1.5rem 0 0;font-size:1.25rem}
+.contact p a{font-weight:500;text-underline-offset:5px}
+footer{padding:2rem 0 3rem;color:var(--mute);font-size:.9rem}
+
+@media (max-width:640px){.about{grid-template-columns:1fr}header.top nav{gap:1rem}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <span style="font-weight:500">Ochaga Mark Best</span>
+    <nav aria-label="Primary"><a href="#skills">Skills</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <h1>Ochaga<br>Mark Best</h1>
+      <p><b>Computer science student</b> at Uganda Christian University, Mukono. I set up and configure computers, and I collect data accurately in the field.</p>
+    </div>
+
+    <section id="skills" aria-labelledby="skills-h">
+      <h2 id="skills-h">Skills</h2>
+
+      <details open>
+        <summary><span class="t">Data enumeration</span><span class="p" aria-hidden="true"></span></summary>
+        <div class="body">
+          <p>I collect, record and organize information carefully so that it is complete and easy to use.</p>
+          <ul><li>Gathering data from people and records</li><li>Entering and checking data for accuracy</li><li>Organizing results so they are ready for analysis</li></ul>
+        </div>
+      </details>
+
+      <details>
+        <summary><span class="t">Windows installation</span><span class="p" aria-hidden="true"></span></summary>
+        <div class="body">
+          <p>I install and set up Windows on computers, from preparing the installation media to a working desktop.</p>
+          <ul><li>Creating bootable installation media</li><li>Installing and activating Windows</li><li>Installing drivers and everyday software</li></ul>
+        </div>
+      </details>
+
+      <details>
+        <summary><span class="t">UEFI/BIOS configuration</span><span class="p" aria-hidden="true"></span></summary>
+        <div class="body">
+          <p>I configure firmware settings so a computer starts and runs the way it should.</p>
+          <ul><li>Changing boot order and boot mode</li><li>Adjusting UEFI and BIOS options</li><li>Preparing a machine for a fresh operating system</li></ul>
+        </div>
+      </details>
+    </section>
+
+    <section id="about" aria-labelledby="about-h">
+      <h2 id="about-h">About</h2>
+      <div class="about">
+        <div>
+          <p>I’m Mark, a first-year computer science student. I enjoy hands-on technical work and learning how computers work from the hardware up.</p>
+          <p>I’m looking to grow my skills through practical projects, internships and volunteer work.</p>
+        </div>
+        <dl>
+          <dt>Studying</dt><dd>Computer Science, Year 1, Semester 1</dd>
+          <dt>University</dt><dd>Uganda Christian University, Mukono</dd>
+          <dt>Strengths</dt><dd>Data enumeration, Windows installation, UEFI/BIOS configuration</dd>
+        </dl>
+      </div>
+    </section>
+
+    <section id="contact" class="contact" aria-labelledby="contact-h">
+      <h2 id="contact-h">Get in touch</h2>
+      <a class="mail" href="mailto:markmilton641@gmail.com">markmilton641@gmail.com</a>
+      <p>Phone: <a href="tel:+256778396529">0778396529</a></p>
+    </section>
+  </main>
+
+  <footer>© 2026 Ochaga Mark Best</footer>
+</div>
+</body>
+</html>
